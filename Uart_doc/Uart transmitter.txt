@@ -1,0 +1,11 @@
+Step to do Data Transmission:
+	1. Program the M bit in USART_CR1 to define the word length.
+	2. Program the number of stop bits in the USART_CR2 register.
+	3. Select the desired baudrate using USART_BRR register.
+	4. Set the TE bit in USART_CR1 to enable the transmit block.
+	5. Enable the USART by writing the USART ENABLE bit in USART_CR1.
+	6. Now if TXE flag is set, then write the data byte to send, in the USART_DR register.
+	7. After writing the last data into the USART_DR register, wait until TC=1. (This indicates
+ that the transmission of the last frame is complete)
+	Remember if software wants to disable USART or UART peripheral, then it has to do it after
+TC bit is set(TC stands for Transmission Complete flag).

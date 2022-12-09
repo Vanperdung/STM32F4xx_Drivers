@@ -1,0 +1,8 @@
+Steps to do Data Reception:
+	1. Program the M bit in USART_CR1 to define the word length.
+	2. Program the number of stop bits in USART_CR2 register.
+	3. Select the desired baudrate using the USART_BRR register.
+	4. Enable the USART by writing the USART Enable bit in USART_CR1.
+	5. Set the RE bit in the USART_CR1 register, which enables the receiver block of the USART peripheral
+	6. When a character is received, wait till the RXNE bit is set and read the data byte from the data register.
+	7. The RXNE bit must be cleared(writing 0 to it) by reading the data register, before the end of the reception of the next character to avoid an overrun error.

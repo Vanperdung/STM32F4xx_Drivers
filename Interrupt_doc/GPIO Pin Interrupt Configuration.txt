@@ -1,0 +1,16 @@
+1. Pin must be in input configuration
+2. Configure the edge trigger (RT,FT,RFT)
+3. Enabke interrupt delivery from pheripheral to the processor (on the peripheral side)
+4. Identify the IRQ number on which the processor accepts the interrupt from that pin
+5. Configure the IRQ priority for the identified IRQ number (Processor side)
+6. Enable interrupt reception on that IRQ number (Processor side)
+7. Implement IRQ handler
+
+Sử dụng thanh ghi SYSCFG EXTICR để chọn pin cho EXTIx line
+
+
+
+
+
+1. Implement the ISR function
+2. Store the address of your ISR at the vector address location corresponding to the ISR function which ypu have written the ISR

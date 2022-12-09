@@ -1,0 +1,13 @@
+VDD is the main power supply of the microcontroller. Provided externally through
+VDD pins of the microcontroller.
+Standard operating voltage of VDD is 1,8 <= VDD <= 3,6.
+Max voltage which can be applied on any VDD pin of the STM32F407 is 4V.
+VSS is a ground reference of the microcontroller and should be maintained at 0V.
+Minimu vaule which can be applied to VSS is -0,3V (no less than this).
+
+
+I(VDD) is total current into VDD power lines(source) 240mA
+I(VSS) is total current out of VSS ground lines(sink) 240mA
+I(IO) is output current sunk by any I/O and control pin 25mA and is output current
+source by any I/Os and control pin 25mA
+
