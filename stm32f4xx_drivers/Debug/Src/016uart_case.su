@@ -1,0 +1,4 @@
+016uart_case.c:21:6:delay	16	static
+016uart_case.c:26:5:main	32	static
+016uart_case.c:90:6:USART2_IRQHandler	8	static
+016uart_case.c:96:6:USART_ApplicationEventCallback	16	static

@@ -1,0 +1,6 @@
+017rtc_lcd.c:12:6:ds1307_init_current	8	static
+017rtc_lcd.c:28:5:main	24	static
+017rtc_lcd.c:58:6:number_to_string	16	static
+017rtc_lcd.c:72:7:time_to_string	32	static
+017rtc_lcd.c:86:7:date_to_string	32	static
+017rtc_lcd.c:101:7:get_day_of_week	56	static
